@@ -1,0 +1,99 @@
+@font-face { font-family: goodtimes; src: url('goodtimes.otf'); } 
+
+html {
+  height: 100%;
+  width: 100%;
+	background-color: #d8d8d8;
+}
+
+h1 {
+	font-size: 80px;
+}
+
+h2 {
+	font-size: 60px;
+}
+
+table th{
+	font-size: 32px;
+}
+
+table td{
+	font-size: 24px;
+}
+
+.banner{
+	width: 100%;
+	margin: 0%;
+	padding: 0%;
+	border: 0%;
+	display: block;
+}
+
+.center {
+	text-align: center;
+}
+.font {
+	font-family: goodtimes;
+}
+
+.red{
+	text-align: center;
+	font-family: goodtimes;
+	background-color: #ff0035;
+}
+
+table, th, td{
+	border: 1px solid;
+	border-collapse: collapse;
+}
+
+th.red{
+	background-color: #E70025;
+}
+
+.blu{
+	text-align: center;
+	font-family: goodtimes;
+	background-color: #0088DC;
+}
+
+th.blu{
+	background-color: #0049D1;
+}
+
+
+logo-slider {
+/*   $min-image-size: 50px;
+  $max-image-size: 100px;
+  --image-size: #{$max-image-size}; */
+  border: 1px solid #575757;
+  padding: 0px;
+  overflow: hidden;
+  max-width: 100%;
+  width: 100%;
+	height: auto;
+  margin: 0;	
+	position: relative;
+	display: flex;
+}
+logo-slider div { 
+		display: flex;
+		position: relative;
+		animation: marquee 10s linear infinite;
+    justify-content: space-around;
+		
+    
+    /* You may need this if there are too few images for the banner width
+    min-width:100%; */
+    
+}
+
+logo-slider tr {
+	width: 100px;
+}
+
+@keyframes marquee {
+	0%   { transform: translateX(0%); }
+	100% { transform: translateX(-100%); }
+}
